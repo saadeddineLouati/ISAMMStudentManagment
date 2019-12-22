@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" type="text/css"	href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+</head>
+<body>
+	<nav class="blue accent-4 navbar-fixed">
+		<div class="nav-wrapper blue accent-4 container">
+			<a href="#" class="brand-logo">ISAMM</a>
+			<ul id="nav-mobile" class="right hide-on-med-and-down">
+		        <li><a href="Etudiants"><i class="material-icons left">group</i>Etudiants</a></li>
+		        <li><a href="Recherche"><i class="material-icons left">search</i>Recherche</a></li>
+		        <li><a href="Profil"><i class="material-icons left">face</i>Profil</a></li>
+		        <li><a href="Deconnexion"><i class="material-icons left">keyboard_capslock</i>Déconnexion</a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<div class="container">
+		<div class="row center">
+			<div class="card-panel blue accent-2 white-text">
+				<h2>
+					<i class="small material-icons">add_box</i> Ajouter un Etudiant
+				</h2>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="card-panel white">
+			<div class="row">
+				<div class="container center">
+					<div class="card-panel orange accent-2 white-text">
+						<h6>
+							<i class="tiny material-icons">warning</i> Merci de vérifier vos paramètres d'entrée
+						</h6>
+					</div>
+				</div>
+				<div class="container">
+					<form class="col s12" method="post" action="InsertionEtudiant">
+					<div class="row">
+						<div class="input-field col s6">
+							<input id="nom" type="text" class="validate" name="nom" required>
+							<label for="nom">Nom</label>
+						</div>
+						<div class="input-field col s6">
+							<input id="prenom" type="text" class="validate" name="prenom" required>
+							<label for="prenom">Prénom</label>
+						</div>
+					</div>
+					<div class="row">
+						<div class="input-field col s12">
+							<input id="moyenne" type="number" min="0" max="20" name="moyenne" class="validate" required>
+							<label for="moyenne">Moyenne</label>
+						</div>
+					</div>
+					<div class="row">
+						<div class="input-field col s12 center">
+							<button
+								class="btn-floating btn-large waves-effect waves-light red"
+								type="reset">
+								<i class="material-icons">cancel</i>
+							</button>
+							<button
+								class="btn-floating btn-large waves-effect waves-light red ">
+								<i class="material-icons">add_box</i>
+							</button>
+						</div>
+					</div>
+				</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<script type="text/javascript"
+		src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
+	<script type="text/javascript"
+		src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+</body>
+</html>
